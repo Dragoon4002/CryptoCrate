@@ -1,1 +1,0 @@
-A crate when bought from marketplace will be sent to the users database

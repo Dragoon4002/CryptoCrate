@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Crates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="userDashboard.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="public/Untitled19_20240713011625.png" alt="crypto Crate Logo">
+            <h1>Crypto Crates</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="userDashboard.html">Dashboard</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="auctionHouse.html">Auction House</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="count">
+            <div class="point_count">
+                You have <div id="points">120</div> points.
+            </div>
+            <div class="nft_count">
+                You have <div id="nft">12</div> nft.
+            </div>
+            <div class="create_count">
+                You have <div id="crate">10</div> unopen crates.
+            </div>
+        </div>
+        <ul class="crates">
+            <h1>These are your unopened Chests</h1>
+            <li class="crate" id="crate_id">
+                <div class="hologram"></div>
+                <p>Paid amount</p>
+            </li>
+        </ul>
+        <ul class="nft_collection">
+            <h1>These are your collected NFTs</h1>
+            <li class="nft" id="nft_id">
+                <div class="hologram"></div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

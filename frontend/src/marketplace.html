@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Crates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="marketplace.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="public/Untitled19_20240713011625.png" alt="crypto Crate Logo">
+            <h1>Crypto Crates</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="userDashboard.html">Dashboard</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="auctionHouse.html">Auction House</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul class="crates">
+            <li class="crate">
+                <div class="hologram"></div>
+                <p>Price: </p>
+            </li>
+        </ul>
+    </main>
+    <script>
+
+
+        function addCrates() {
+            const cratesList = document.querySelector('.crates');
+
+            for (let i = 0; i < number; i++) {
+                const crateItem = document.createElement('li');
+                crateItem.classList.add('crate');
+
+                const hologramDiv = document.createElement('div');
+                hologramDiv.classList.add('hologram');
+
+                const priceParagraph = document.createElement('p');
+                priceParagraph.textContent = 'Price: ';
+
+                crateItem.appendChild(hologramDiv);
+                crateItem.appendChild(priceParagraph);
+                cratesList.appendChild(crateItem);
+            }
+        }
+    </script>
+</body>
+</html>
